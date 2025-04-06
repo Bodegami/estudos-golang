@@ -4,7 +4,7 @@ import "fmt"
 
 func subtract(a int, b int) int {
 	result := a - b
-	fmt.Printf("A subtração de %d e %d é: %d\n", 5, 10, result)
+	fmt.Printf("A subtração de %d e %d é: %d\n", a, b, result)
 	return result
 }
 

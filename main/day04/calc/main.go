@@ -6,15 +6,22 @@ import (
 )
 
 func main() {
-
 	fmt.Println("Calculadora Go Essentials")
 
-	math.Sum(5, 10)
+	result := math.Sum(5, 10)
+	fmt.Println(result)
 
-	math.Multiply(5, 10)
+	result = math.Multiply(5, 10)
+	fmt.Println(result)
 
-	math.Divide(5, 10)
+	var err error
+	result, err = math.Divide(5, 0)
+	if err != nil {
+		fmt.Printf("Nao consegui fazer a divisao. Error: %v\n", err)
+	}
+	fmt.Println(result)
 
-	math.Subtract(5, 10)
+	result = math.Subtract(5, 10)
+	fmt.Println(result)
 
 }
